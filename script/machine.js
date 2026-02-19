@@ -27,7 +27,9 @@ function showOnly(id){
     
     const addmoney = document.getElementById("add-money");
     const cashout = document.getElementById("cashout");
-    
+    const history = document.getElementById("history");
+     
+    history.classList.add("hidden")
     addmoney.classList.add("hidden")
     cashout.classList.add("hidden")
 

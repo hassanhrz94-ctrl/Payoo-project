@@ -23,6 +23,15 @@
     if(pin=== "1234"){
         alert(`Add Money Success from | ${bankAccount} at ${new Date()}`)
         setBalance(newBalance);
+
+        const history =document.getElementById('history-container');
+        const newHistory =document.createElement("div");
+        newHistory.innerHTML = `
+        <div class="transaction-card p-5 bg-base-100">
+            Add Money Success from | ${bankAccount}, acco-no ${accno} at ${new Date()}
+        </div>
+        `
+        history.append(newHistory)
     }
     else{
         alert("Invalid pin")
